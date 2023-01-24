@@ -17,6 +17,6 @@ class Person {
 }
 $amine = new Person('amine', '22');
 echo $amine->get_name();
-echo 'br';
+echo '<br>';
 echo $amine->get_age();
 ?>
