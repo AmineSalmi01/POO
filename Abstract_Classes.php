@@ -1,23 +1,23 @@
 <?php 
 
 abstract class Solicode {
-    public $name;
+    protected $name;
 
     function __construct($name)
     {
         $this->name = $name;
     }
-    abstract function message() : string;
+    abstract function message();
 }
 
 class formateur extends Solicode {
-    function message() : string {
+    function message() {
         return "Name The Formateur is {$this->name}";
     }
 }
 
 class Student extends Solicode {
-    function message() : string {
+    function message() {
         return "Name the Student is {$this->name}";
     }
 }
