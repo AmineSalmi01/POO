@@ -11,8 +11,8 @@ class dog implements Animal {
     }
 }
 class cat implements Animal {
-    public function makeSound($sound = 'meaw') {
-        echo $sound;
+    public function makeSound($sound = 'meaw', $color = 'black') {
+        echo "{$sound} color is {$color}";
     }
 }
 
